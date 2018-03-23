@@ -1,0 +1,17 @@
+{
+  "name": "thermostatLocalServer",
+  "version": "0.0.0",
+  "description": "local express service to control my thermostat",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raffihsieh/thermostatLocalServer.git"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
