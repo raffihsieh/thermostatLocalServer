@@ -4,7 +4,10 @@
   "description": "local express service to control my thermostat",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rm -rf build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d build --copy-files",
+    "start": "npm run clean && npm run build && node build/index.js"
   },
   "repository": {
     "type": "git",
@@ -12,6 +15,10 @@
   },
   "license": "ISC",
   "dependencies": {
+    "async-child-process": "^1.1.1",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
     "express": "^4.16.3"
   }
 }
